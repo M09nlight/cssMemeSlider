@@ -74,3 +74,42 @@
 .controls label:hover {
     opacity: 0.7;
 }
+
+#radio-1:checked ~ .slider__images #slide-1,
+#radio-2:checked ~ .slider__images #slide-2,
+#radio-3:checked ~ .slider__images #slide-3,
+#radio-4:checked ~ .slider__images #slide-4 {
+    opacity: 1;
+}
+#radio-4:checked ~ .slider__images .slider__images-wrapper {
+    transform: translateX(-75%);
+}
+#radio-3:checked ~ .slider__images .slider__images-wrapper {
+    transform: translateX(-50%);
+}
+#radio-2:checked ~ .slider__images .slider__images-wrapper {
+    transform: translateX(-25%);
+}
+#radio-1:checked ~ .slider__images .slider__images-wrapper {
+    transform: translateX(0%);
+}
+
+#radio-4:checked ~ .content .content__phrases {
+    transform: translateX(-300%);
+}
+#radio-3:checked ~ .content .content__phrases {
+    transform: translateX(-200%);
+}
+#radio-2:checked ~ .content .content__phrases {
+    transform: translateX(-100%);
+}
+#radio-1:checked ~ .content .content__phrases {
+    transform: translateX(0%);
+}
+#radio-1:checked ~ .content .controls #label-1,
+#radio-2:checked ~ .content .controls #label-2,
+#radio-3:checked ~ .content .controls #label-3,
+#radio-4:checked ~ .content .controls #label-4 {
+    opacity: 1;
+    top: 7%;
+}
