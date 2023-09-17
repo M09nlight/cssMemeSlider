@@ -113,3 +113,22 @@
     opacity: 1;
     top: 7%;
 }
+
+@media (max-width: 768px) {
+    .content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .content__phrases-wrapper {
+        width: 100%;
+        order: 2;
+    }
+    .controls {
+        justify-content: center;
+    }
+    .slide img {
+        object-fit: cover;
+        object-position: top;
+    }
+}
