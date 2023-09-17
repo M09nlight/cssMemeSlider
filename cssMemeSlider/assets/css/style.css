@@ -2,8 +2,7 @@
     display: none;
 }
 .container {
-    position: relative;
-    max-width: 600px;
+    max-width: 45%;
     margin: 5% auto;
 }
 .slider {
@@ -115,6 +114,9 @@
 }
 
 @media (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
     .content {
         flex-wrap: wrap;
         justify-content: center;
@@ -130,5 +132,8 @@
     .slide img {
         object-fit: cover;
         object-position: top;
+    }
+    .content__text {
+        font-size: 1.2rem;
     }
 }
